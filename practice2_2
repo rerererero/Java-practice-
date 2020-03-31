@@ -1,0 +1,24 @@
+public class MainClass {
+	public static void main(String[] args) {
+		Teacher Zhang=new Teacher();
+		Student Li=new Student();
+		System.out.println("相加的数是"+Zhang.add(12,236 ));
+		System.out.println("相减的数是"+Zhang.sub(234, 120));
+		Li.speak();
+	}
+}
+class Student {
+	void speak() {
+		System.out.println("老师好！");
+	}
+}
+class Teacher {
+	double add(double a,double b) {
+		double num1=a+b;
+		return num1;
+	}
+	double sub(double a,double b) {
+		double num2=a-b;
+		return num2;
+	}
+}
